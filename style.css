@@ -525,15 +525,7 @@ header {
   justify-content: space-between;
   gap: 30px;
 }
-.navbar_logo-text {
-  text-align: center;
-}
-.navbar_logo-text a {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 400;
-  color: var(--color);
-}
+
 .intro h3 {
   font-weight: 300;
   letter-spacing: 1px;

@@ -1,21 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = document.querySelectorAll(".menu-item");
   menuItems.forEach((item) => {
-    let word = item.children[0].innerText.split("");
-
-    let styledLetters = "";
-
-    word.forEach((letter, idx) => {
-      styledLetters += `<span style="--index: ${idx};">${letter}</span>`;
+    let words = item.children[0].innerText.trim().split(/\s+/); // Split by whitespace
+    let styledContent = "";
+    words.forEach((word) => {
+      let styledLetters = "";
+      word.split("").forEach((letter, idx) => {
+        styledLetters += `<span style="--index: ${idx};">${letter}</span>`;
+      });
+      styledContent += `${styledLetters}&nbsp;`; // Preserve space between words
     });
-
-    item.children[0].innerHTML = styledLetters;
-
+    item.children[0].innerHTML = styledContent;
     let cloneDiv = item.children[0].cloneNode(true);
     cloneDiv.style.position = "absolute";
     cloneDiv.style.left = "0";
     cloneDiv.style.top = "0";
-
     item.appendChild(cloneDiv);
   });
 
