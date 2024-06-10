@@ -23,6 +23,14 @@
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
+
+    <link
       rel="preload"
       href="fonts/fontfamily.woff2"
       as="font"
@@ -54,9 +62,9 @@
     <div class="back-to-top back-to-top">
       <a href="#">
         <img
+          loading="lazy"
           width="50"
           height="50"
-          class="lazyloaded"
           alt="Back to top"
           src="assets/back-to-top.png"
         />
@@ -70,7 +78,7 @@
         >
           <label class="tab-container">
             <div class="logo_container">
-              <img src="assets/image1.webp" alt="Yasir Malik" />
+              <img loading="lazy" src="assets/image1.webp" alt="Yasir Malik" />
               <a href="#" class="navbar_logo-link menu-item">
                 <div class="navbar_logo-text" style="opacity: 1">
                   <span class="menu-item-text">Yasir.</span>
@@ -116,7 +124,7 @@
         </div>
         <div class="navlinks-container">
           <div class="logo_containers">
-            <img src="assets/image1.webp" alt="Yasir Malik" />
+            <img loading="lazy" src="assets/image1.webp" alt="Yasir Malik" />
             <a
               href="#"
               class="menu-item"
@@ -131,17 +139,17 @@
           </div>
           <div role="navigation" class="navbar_menu">
             <a id="about-link" href="about.html" class="menu-item navbar_link"
-              ><div class="navbar_link-text">
+              ><div>
                 <span class="menu-item-text">about</span>
               </div>
             </a>
             <a id="works-link" href="#" class="menu-item w-inline-block"
-              ><div class="navbar_link-text">
+              ><div>
                 <span class="menu-item-text">Works</span>
               </div></a
             >
             <a id="contact-link" href="#" class="menu-item w-inline-block"
-              ><div class="navbar_link-text">
+              ><div>
                 <span class="menu-item-text">Contact</span>
               </div></a
             >
@@ -171,7 +179,7 @@
                   loop
                   muted
                   controls
-                  poster="assets/image3.webp"
+                  poster="assets/image1.webp"
                   src="assets/yasir.mp4"
                 ></video>
               </div>
@@ -234,7 +242,7 @@
             </div>
           </div>
           <div class="header_projects-list-wrap">
-            <div class="overflow-hidden menu-item">
+            <div class="menu-item">
               <div>
                 <h3 class="text-caption text-color-secondary">
                   <span class="menu-item-text"> skills</span>
@@ -258,30 +266,29 @@
                         >
                       </div>
                     </div>
-                    <div class="overflow-hidden">
-                      <div class="icon-arrow w-embed">
-                        <svg
-                          display="block"
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 16 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1.14996 7L13.9 7"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                          <path
-                            d="M8.14996 13.125L14.15 7L8.14996 0.875007"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </div></div
+
+                    <div class="icon-arrow w-embed">
+                      <svg
+                        display="block"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.14996 7L13.9 7"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M8.14996 13.125L14.15 7L8.14996 0.875007"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg></div
                   ></a>
                 </div>
                 <div
@@ -304,30 +311,29 @@
                         >
                       </div>
                     </div>
-                    <div class="overflow-hidden">
-                      <div class="icon-arrow w-embed">
-                        <svg
-                          display="block"
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 16 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1.14996 7L13.9 7"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                          <path
-                            d="M8.14996 13.125L14.15 7L8.14996 0.875007"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </div></div
+
+                    <div class="icon-arrow w-embed">
+                      <svg
+                        display="block"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.14996 7L13.9 7"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M8.14996 13.125L14.15 7L8.14996 0.875007"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg></div
                   ></a>
                 </div>
                 <div class="header_projects-list-item w-dyn-item">
@@ -347,31 +353,31 @@
                         >
                       </div>
                     </div>
-                    <div class="overflow-hidden">
-                      <div class="icon-arrow w-embed">
-                        <svg
-                          display="block"
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 16 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1.14996 7L13.9 7"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                          <path
-                            d="M8.14996 13.125L14.15 7L8.14996 0.875007"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </div></div
-                  ></a>
+
+                    <div class="icon-arrow w-embed">
+                      <svg
+                        display="block"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.14996 7L13.9 7"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M8.14996 13.125L14.15 7L8.14996 0.875007"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
                 <div
                   role="listitem"
@@ -391,30 +397,29 @@
                         <span class="menu-item-text">web-designing</span>
                       </div>
                     </div>
-                    <div class="overflow-hidden">
-                      <div class="icon-arrow w-embed">
-                        <svg
-                          display="block"
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 16 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1.14996 7L13.9 7"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                          <path
-                            d="M8.14996 13.125L14.15 7L8.14996 0.875007"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </div></div
+
+                    <div class="icon-arrow w-embed">
+                      <svg
+                        display="block"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.14996 7L13.9 7"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M8.14996 13.125L14.15 7L8.14996 0.875007"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg></div
                   ></a>
                 </div>
                 <div class="header_projects-list-item w-dyn-item">
@@ -432,30 +437,29 @@
                         <span class="menu-item-text">gsap-scrolltrigger </span>
                       </div>
                     </div>
-                    <div class="overflow-hidden">
-                      <div class="icon-arrow w-embed">
-                        <svg
-                          display="block"
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 16 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1.14996 7L13.9 7"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                          <path
-                            d="M8.14996 13.125L14.15 7L8.14996 0.875007"
-                            stroke="currentcolor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"
-                          ></path>
-                        </svg>
-                      </div></div
+
+                    <div class="icon-arrow w-embed">
+                      <svg
+                        display="block"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.14996 7L13.9 7"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M8.14996 13.125L14.15 7L8.14996 0.875007"
+                          stroke="currentcolor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg></div
                   ></a>
                 </div>
               </div>
@@ -786,7 +790,8 @@
               <div class="service-img">
                 <div class="img">
                   <img
-                    src="assets/image3.webp"
+                    loading="lazy"
+                    src="assets/image1.webp"
                     alt="Service to my clients 01"
                   />
                 </div>
@@ -811,7 +816,8 @@
               <div class="service-img">
                 <div class="img">
                   <img
-                    src="assets/image3.webp"
+                    loading="lazy"
+                    src="assets/image1.webp"
                     alt="Service to my clients 02"
                   />
                 </div>
@@ -836,7 +842,8 @@
               <div class="service-img">
                 <div class="img">
                   <img
-                    src="assets/image3.webp"
+                    loading="lazy"
+                    src="assets/image1.webp"
                     alt="Service to my clients 03"
                   />
                 </div>
@@ -861,7 +868,8 @@
               <div class="service-img">
                 <div class="img">
                   <img
-                    src="assets/image3.webp"
+                    loading="lazy"
+                    src="assets/image1.webp"
                     alt="Service to my clients 04"
                   />
                 </div>
@@ -886,7 +894,8 @@
               <div class="service-img">
                 <div class="img">
                   <img
-                    src="assets/image3.webp"
+                    loading="lazy"
+                    src="assets/image1.webp"
                     alt="Service to my clients 05"
                   />
                 </div>
@@ -909,7 +918,11 @@
           <div class="footer_main container">
             <div class="footer_work">
               <div class="footer_container">
-                <img src="assets/image1.webp" alt="Yasir Malik" />
+                <img
+                  loading="lazy"
+                  src="assets/image1.webp"
+                  alt="Yasir Malik"
+                />
                 <span> Let’s work </span>
               </div>
               <span>together</span>
