@@ -32,7 +32,7 @@
     justify-content: space-between;
   }
   .flex-col-03 {
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
   .bottom-footer,
