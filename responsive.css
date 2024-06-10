@@ -24,6 +24,19 @@
     margin: 60px 0;
   }
 }
+
+@media screen {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .button_seat {
     margin: 0.2rem 0;

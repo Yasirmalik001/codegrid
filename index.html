@@ -22,23 +22,11 @@
     <meta content="#" property="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
+    <link rel="stylesheet" href="screen.css" media="screen" />
+    <link rel="stylesheet" href="print.css" media="print" />
     <noscript><link rel="stylesheet" href="style.css" /></noscript>
     <link href="" rel="shortcut icon" type="image/x-icon" />
     <link rel="canonical" href="https://yasirmalik.com" />
-    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
@@ -127,12 +115,12 @@
                 <span class="menu-item-text">about</span>
               </div>
             </a>
-            <a id="works-link" href="#" class="menu-item w-inline-block"
+            <a id="works-link" href="#" class="menu-item"
               ><div>
                 <span class="menu-item-text">Works</span>
               </div></a
             >
-            <a id="contact-link" href="#" class="menu-item w-inline-block"
+            <a id="contact-link" href="#" class="menu-item"
               ><div>
                 <span class="menu-item-text">Contact</span>
               </div></a
@@ -276,9 +264,7 @@
                   ></a>
                 </div>
                 <div role="listitem" class="header_projects-list-item">
-                  <a
-                    href="#"
-                    class="header_projects-list-link w-inline-block tab"
+                  <a href="#" class="header_projects-list-link tab"
                     ><div class="tab-divider">
                       <div
                         class="tab-divider__overlay"
@@ -318,9 +304,7 @@
                   ></a>
                 </div>
                 <div class="header_projects-list-item">
-                  <a
-                    href="#"
-                    class="header_projects-list-link w-inline-block tab"
+                  <a href="#" class="header_projects-list-link tab"
                     ><div class="tab-divider">
                       <div
                         class="tab-divider__overlay"
@@ -361,9 +345,7 @@
                   </a>
                 </div>
                 <div role="listitem" class="header_projects-list-item">
-                  <a
-                    href="#"
-                    class="header_projects-list-link w-inline-block tab"
+                  <a href="#" class="header_projects-list-link tab"
                     ><div class="tab-divider">
                       <div
                         class="tab-divider__overlay"
@@ -401,9 +383,7 @@
                   ></a>
                 </div>
                 <div class="header_projects-list-item">
-                  <a
-                    href="#"
-                    class="header_projects-list-link w-inline-block tab"
+                  <a href="#" class="header_projects-list-link tab"
                     ><div class="tab-divider">
                       <div
                         class="tab-divider__overlay"
@@ -1063,8 +1043,8 @@
       src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"
       defer
     ></script>
-    <script src="main.js" defer></script>
-    <script src="lenis.js" defer></script>
-    <script src="script.js" defer></script>
+    <script rel="preload" as="script" src="main.js" defer></script>
+    <script rel="preload" as="script" src="lenis.js" defer></script>
+    <script rel="preload" as="script" src="script.js" defer></script>
   </body>
 </html>
