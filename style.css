@@ -212,6 +212,11 @@ a {
   visibility: visible;
   scale: 1.5;
 }
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .menu-overlay.showing {
   display: "block";
 }
@@ -268,7 +273,7 @@ a {
 }
 .btn-click .btn-text-01::after,
 .menu-btn-open .button::after,
-.more_work button::after {
+.about-me button::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -283,7 +288,7 @@ a {
 }
 .btn-click .btn-text-01:hover::after,
 .menu-btn-open .button:hover::after,
-.more_work button:hover::after {
+.about-me button:hover::after {
   bottom: 0;
   border-radius: 0;
 }
@@ -375,7 +380,7 @@ a {
   transition: 0.3s;
 }
 .button_seat::before,
-.more_work button {
+.about-me button {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
 }
@@ -475,7 +480,7 @@ header {
   justify-content: center;
   gap: 50px;
 }
-.more_work,
+.about-me,
 .navbar_logo-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,29 +529,6 @@ header {
 .heading p {
   font-size: var(--fs-sm);
 }
-.more_work button {
-  position: relative;
-  overflow: hidden;
-  width: 10rem;
-  padding: 15px 20px;
-  border-radius: 36px;
-  transition: 0.3s;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.more_work button a {
-  position: relative;
-  z-index: 9;
-  font-size: 1.2rem;
-}
 
 .bottom-footer,
 .footer_main,
@@ -578,14 +560,7 @@ header {
 .hero-section {
   flex-basis: 55%;
 }
-.text-caption {
-  letter-spacing: 0.06em;
-  font-size: 0.88em;
-  font-weight: 500;
-}
-.text-caption.text-color-secondary {
-  letter-spacing: 0.1em;
-}
+
 .header_projects-list-link {
   color: var(--color);
   -webkit-box-pack: justify;
@@ -1441,13 +1416,7 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-  .more_work button a {
-    font-size: 1rem;
-  }
-  .more_work button {
-    padding: 20px 15px;
-    width: 10rem;
-  }
+
   .button_seat {
     padding: 1.25rem 1.5rem;
   }
