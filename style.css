@@ -68,6 +68,7 @@ html {
   font-size: 1.5rem;
 }
 .tabs-container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -541,7 +542,7 @@ header {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: start;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1338,12 +1339,15 @@ footer {
   }
 }
 @media screen and (max-width: 450px) {
+  .menu-item-text {
+    font-size: 1rem;
+  }
   .social-links {
     gap: 15px;
     flex-wrap: wrap;
   }
   .container {
-    max-width: 400px;
+    max-width: 380px;
   }
   .project .project-link .project-title {
     font-size: 1.5rem;
