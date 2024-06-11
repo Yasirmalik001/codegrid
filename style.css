@@ -526,7 +526,7 @@ header {
   line-height: 90%;
   margin: 2rem 0;
   font-display: swap;
-  font-size: 9vw;
+  font-size: 8rem;
 }
 .heading p {
   font-size: var(--fs-sm);
@@ -1227,6 +1227,10 @@ footer {
   width: 100%;
 }
 @media screen and (max-width: 990px) {
+  .hero .heading h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+  }
   .menu-cols {
     display: block;
   }
