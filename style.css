@@ -43,7 +43,7 @@ html {
   text-transform: capitalize;
   background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
-  overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 article {
   text-transform: math-auto;
@@ -850,10 +850,7 @@ header {
   -o-transition: padding-inline var(--transition-time) ease-in;
   transition: padding-inline var(--transition-time) ease-in;
 }
-.service,
-.services-info h3 {
-  border-top: 2px solid rgba(26, 26, 26, 0.27);
-}
+
 .project .project-link {
   width: 100%;
   display: flex;
@@ -942,42 +939,7 @@ header {
   object-position: center;
   border-radius: 8px;
 }
-.intersection-observer {
-  width: 100%;
-  height: 100%;
-}
-.service-info-heading h1 {
-  font-weight: 300;
-}
-.services {
-  padding: 8rem 0;
-  display: flex;
-  flex-direction: column;
-}
-.service-header {
-  width: 100%;
-  display: flex;
-  gap: 4rem;
-}
-.service-header .service-col:first-child {
-  flex: 2;
-}
-.service-header .service-col:nth-child(2) {
-  flex: 5;
-  padding: 1rem;
-}
-.service {
-  display: flex;
-  gap: 2rem;
-}
-.services-info {
-  flex: 2;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .accordion-wrapper,
 .tab-header {
   display: -webkit-box;
@@ -985,36 +947,13 @@ header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
 }
-.services-info h3 {
-  border-bottom: 2px solid rgba(26, 26, 26, 0.27);
-  padding: 10px 0;
-}
-.service-img {
-  flex: 5;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-}
-.img {
-  width: 30%;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
+
 .tab-content,
 .tab-header {
   width: 100%;
   overflow: hidden;
 }
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
+
 .accordion-section .container {
   container-type: inline-size;
   display: -ms-grid;
@@ -1303,13 +1242,6 @@ footer {
     flex: 1;
     padding: 0.6rem 0;
   }
-  .service {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    border-top: none;
-    margin: 60px 0;
-  }
 }
 
 @media screen {
@@ -1328,9 +1260,7 @@ footer {
   .button_seat {
     margin: 0.2rem 0;
   }
-  .services-info {
-    justify-content: space-between;
-  }
+
   .flex-col-03 {
     justify-content: space-between;
     width: 100%;

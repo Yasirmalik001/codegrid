@@ -59,5 +59,5 @@ magneticBtns.forEach((btn) => {
     timeoutId = setTimeout(() => removeAnimation(btn, btnText), 500);
   });
 
-  window.addEventListener("mouseleave", () => removeAnimation(btn, btnText));
+  btn.addEventListener("mouseleave", () => removeAnimation(btn, btnText));
 });

@@ -322,47 +322,46 @@ document.addEventListener("DOMContentLoaded", () => {
       gsap.to(tabDividerOverlay, { width: 0 });
     });
   });
-});
 
-let timeSpan = document.querySelector("#timeSpan");
+  let timeSpan = document.querySelector("#timeSpan");
 
-setInterval(() => {
-  timeSpan.innerText = new Date().toLocaleTimeString();
-}, 1000);
+  setInterval(() => {
+    timeSpan.innerText = new Date().toLocaleTimeString();
+  }, 1000);
 
-const video = document.getElementById("videoPlayer");
-const videoTime = document.getElementById("videoTime");
+  const video = document.getElementById("videoPlayer");
+  const videoTime = document.getElementById("videoTime");
 
-video.addEventListener("timeupdate", () => {
-  const currentTime = video.currentTime;
-  const duration = video.duration;
-  const timeLeft = duration - currentTime;
+  video.addEventListener("timeupdate", () => {
+    const currentTime = video.currentTime;
+    const duration = video.duration;
+    const timeLeft = duration - currentTime;
 
-  const minutes = Math.floor(timeLeft / 60);
-  const seconds = Math.floor(timeLeft % 60);
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = Math.floor(timeLeft % 60);
 
-  videoTime.textContent = `-${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
-});
+    videoTime.textContent = `-${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+  });
 
-video.addEventListener("loadedmetadata", () => {
-  video.dispatchEvent(new Event("timeupdate"));
-});
+  video.addEventListener("loadedmetadata", () => {
+    video.dispatchEvent(new Event("timeupdate"));
+  });
 
-const servicesObserver = document.querySelector(".intersection-observer");
-const backToTopButton = document.querySelector(".back-to-top");
+  const backToTopButton = document.querySelector(".back-to-top");
 
-window.addEventListener("scroll", () => {
-  if (scrollY > 500) {
-    backToTopButton.classList.add("top");
-  } else {
-    backToTopButton.classList.remove("top");
-  }
-});
+  window.addEventListener("scroll", () => {
+    if (scrollY > 500) {
+      backToTopButton.classList.add("top");
+    } else {
+      backToTopButton.classList.remove("top");
+    }
+  });
 
-backToTopButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+  backToTopButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
 });
