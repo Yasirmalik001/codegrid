@@ -41,6 +41,7 @@ section {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  letter-spacing: 1px;
 }
 body,
 html {
@@ -868,7 +869,6 @@ header {
 }
 .project .project-link .project-title {
   font-size: var(--fs-lg);
-  text-transform: uppercase;
 }
 .project:hover {
   padding-inline: var(--p-inline-hover);
