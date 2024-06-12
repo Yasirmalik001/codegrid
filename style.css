@@ -73,13 +73,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
   position: fixed;
   width: 100%;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 1.05rem;
   z-index: 55;
+  max-width: 400px;
 }
 .tab-container {
   align-items: center;
@@ -126,6 +126,7 @@ img {
 img {
   object-fit: cover;
 }
+
 :root {
   --secondary-color: #000000;
   --color-blue: #455ce9;
