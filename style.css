@@ -709,8 +709,8 @@ header {
   animation-play-state: paused;
 }
 .marquee_component {
-  -webkit-animation: 40s linear infinite Scrollar;
-  animation: 40s linear infinite Scrollar;
+  -webkit-animation: 30s linear infinite Scrollar;
+  animation: 30s linear infinite Scrollar;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   -webkit-box-align: center;
