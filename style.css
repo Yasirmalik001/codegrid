@@ -45,7 +45,6 @@ section {
 }
 body,
 html {
-  text-transform: capitalize;
   background-color: var(--primary-color);
   font-family: "NeueMont", sans-serif;
   scroll-behavior: smooth;
@@ -67,12 +66,12 @@ html {
   border-radius: 99px;
 }
 .menu-item-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .tabs-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   -webkit-backdrop-filter: blur(10px);
@@ -182,12 +181,6 @@ div.back-to-top a img {
 }
 div.back-to-top a:hover {
   opacity: 1;
-}
-body[theme="black"] {
-  background-color: var(--color);
-}
-body[theme="white"] {
-  background-color: var(--primary);
 }
 
 a {
@@ -380,6 +373,7 @@ a {
 }
 .menu-link a {
   font-size: 40px;
+  color: var(--color);
 }
 .menu-link::after {
   position: absolute;
@@ -405,10 +399,12 @@ a {
   padding: 1.25rem 2.5rem;
   border-radius: 4px;
   overflow: hidden;
+  color: var(--black);
 }
+
 .container,
 header {
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 .button_seat::before {
   position: absolute;
@@ -416,6 +412,9 @@ header {
   height: 100%;
   transition: 0.3s;
   z-index: -1;
+}
+.button_seat:hover a {
+  color: white;
 }
 .button_seat:hover.button_seat::before {
   width: 100%;
@@ -1237,9 +1236,7 @@ footer {
   .menu-cols {
     display: block;
   }
-  #videoPlayer {
-    width: 100%;
-  }
+
   .menu-link a {
     font-size: 30px;
   }
@@ -1268,6 +1265,9 @@ footer {
 @media screen and (max-width: 768px) {
   .button_seat {
     margin: 0.2rem 0;
+  }
+  #videoPlayer {
+    width: 100%;
   }
 
   .flex-col-03 {
