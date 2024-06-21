@@ -67,6 +67,7 @@ html {
 }
 .menu-item-text {
   font-size: 1.3rem;
+  letter-spacing: 2px;
 }
 .tabs-container {
   display: flex;
