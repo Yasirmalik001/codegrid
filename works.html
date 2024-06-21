@@ -11,20 +11,25 @@
         box-sizing: border-box;
         font-family: NeueMont;
       }
+
       body {
         width: 100vw;
-        overflow: hidden;
         height: 100vh;
+        overflow: hidden;
       }
+
       @font-face {
         font-family: NeueMont;
         src: url(/codegrid/NeueMontreal-Regular.otf);
         font-display: swap;
       }
+
       .work-container {
         width: 100%;
         height: 100%;
+        overflow: hidden;
       }
+
       .slide-images img {
         position: absolute;
         top: 0;
@@ -33,10 +38,14 @@
         height: 100%;
         object-fit: cover;
       }
+
       .slider {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
+        overflow: hidden;
+        position: relative;
       }
+
       .slider-titles {
         position: absolute;
         top: 0;
@@ -58,6 +67,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
       }
+
       .title h1 {
         flex: 1;
         font-size: 38px;
@@ -66,11 +76,13 @@
         color: #8888888c;
         transition: color 0.25s ease, opacity 0.25s ease;
       }
+
       .active h1 {
         color: #fff;
         z-index: 999;
         font-weight: 700;
       }
+
       .slide-images {
         width: 650px;
         height: 600px;
@@ -81,6 +93,7 @@
         pointer-events: all;
         opacity: 0.8;
       }
+
       .img-top {
         position: absolute;
         width: 100%;
@@ -96,30 +109,46 @@
         clip-path: polygon(100% 50%, 15% 50%, 15% 100%, 100% 100%);
         transition: clip-path 1s cubic-bezier(0.075, 0.82, 0.165, 1);
       }
+
       .slide-images:hover .img-top {
         clip-path: polygon(100% 0%, 0% 0%, 0% 50%, 100% 50%);
         transform: scale(1);
       }
+
       .slide-images:hover .img-bottom {
         clip-path: polygon(100% 50%, 0% 50%, 0% 100%, 100% 100%);
       }
+
       @media screen and (max-width: 900px) {
+        *::-webkit-scrollbar {
+          display: none;
+        }
+
         .slide-images {
           width: 100%;
           height: 100%;
         }
+
+        .slider {
+          width: 100vw;
+          height: 100vh;
+        }
+
         .slide-images:hover .img-top,
         .slide-images:hover .img-bottom {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
+
         .slide-images .img-top,
         .slide-images .img-bottom {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
+
         .title h1 {
           opacity: 0;
           font-size: 24px;
         }
+
         .active h1 {
           font-size: 24px;
           opacity: 1;
