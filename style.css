@@ -1085,6 +1085,7 @@ footer {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .footer_container span,
 .footer_work span {
@@ -1291,6 +1292,7 @@ footer {
   .footer_container img {
     width: 50px;
     height: 50px;
+    object-fit: cover;
   }
   .row {
     flex-direction: column-reverse;
