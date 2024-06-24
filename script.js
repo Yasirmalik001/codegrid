@@ -245,4 +245,36 @@ document.addEventListener("DOMContentLoaded", () => {
     w.addEventListener("click", (e) => {
       e.preventDefault(), window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+  const swiper = new Swiper(".swiper", {
+    loop: !0,
+    slidesPerView: 3,
+    spaceBetween: 5,
+    grabCursor: !0,
+    freeMode: !0,
+    speed: 1e4,
+    autoplay: { delay: 0, disableOnInteraction: !1 },
+    breakpoints: {
+      350: { slidesPerView: 1, spaceBetween: 20 },
+      480: { slidesPerView: 1, spaceBetween: 20 },
+      1040: { slidesPerView: 2, spaceBetween: 20 },
+      1240: { slidesPerView: 3, spaceBetween: 20 },
+    },
+  });
+
+  const swiperLtr = new Swiper(".swiper-ltr", {
+    loop: !0,
+    slidesPerView: 3,
+    spaceBetween: 5,
+    grabCursor: !0,
+    freeMode: !0,
+    speed: 1e4,
+    autoplay: { delay: 0, disableOnInteraction: !1, reverseDirection: !0 },
+    breakpoints: {
+      350: { slidesPerView: 1, spaceBetween: 20 },
+      480: { slidesPerView: 1, spaceBetween: 20 },
+      1040: { slidesPerView: 2, spaceBetween: 20 },
+      1240: { slidesPerView: 3, spaceBetween: 20 },
+    },
+  });
 });

@@ -1380,3 +1380,52 @@ footer {
     height: 1.4rem;
   }
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.clients-Reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.e-con-inner {
+  background-color: #1e1e1e;
+  border-radius: 30px;
+  color: #fff;
+  padding: 30px;
+  max-width: 500px;
+}
+.scrollbar {
+  overflow: hidden;
+}
+.elementor-author-box__avatar {
+  width: 50px;
+  height: 50px;
+}
+.elementor-author-box__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.elementor-view-default {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.elementor-icon-box-description,
+.elementor-icon-box-icon,
+.elementor-icon-box-title {
+  padding: 10px 0;
+}
+.elementor-author-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0 10px;
+}
+.elementor-author-box__name {
+  font-size: 30px;
+}
