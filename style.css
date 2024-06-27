@@ -458,7 +458,7 @@ header {
   background-color: var(--background-primary);
 }
 .container {
-  max-width: 1320px;
+  max-width: 1220px;
   margin-inline: auto;
 }
 .btn-hamburger {
