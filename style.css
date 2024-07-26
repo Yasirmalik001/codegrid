@@ -1236,6 +1236,7 @@ footer {
   }
   .heading_project_list {
     flex-direction: column;
+    align-items: start;
     gap: 30px;
   }
   .hover_image_effect h1 {
