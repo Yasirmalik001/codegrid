@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nextIndex = 0;
       }
       goToSlide(nextIndex);
-    }, 10000); // Change slide every 3 seconds
+    }, 3000); // Change slide every 3 seconds
   }
 
   function resetAutoSlide() {
