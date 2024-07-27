@@ -73,6 +73,7 @@ img {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: 1px solid black;
   letter-spacing: 1px;
 }
 body,
@@ -277,6 +278,13 @@ a {
   width: 0;
   background: var(--color);
   left: 0;
+}
+.Benefits-container {
+  padding: 30px 0;
+}
+.button_seat a {
+  color: black;
+  font-size: 20px;
 }
 .btn-click .btn-text-01::after,
 .menu-btn-open .button::after,
@@ -1252,7 +1260,7 @@ footer {
     gap: 30px;
   }
   .heading_project_list {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   .btn-round {
     width: 9rem;
@@ -1291,11 +1299,7 @@ footer {
     right: 30px;
     top: 100px;
   }
-  .heading_project_list {
-    flex-direction: column;
-    align-items: start;
-    gap: 30px;
-  }
+
   .hover_image_effect h1 {
     font-size: 3.5rem;
   }
@@ -1493,6 +1497,11 @@ img {
   scrollbar-width: none;
 }
 @media screen and (max-width: 900px) {
+  .heading_project_list {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
   .Awwards-theme-showing-nav-item-wrapper.active
     .Awwards-theme-showing-nav-item {
     width: 100%;
