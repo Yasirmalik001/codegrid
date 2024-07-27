@@ -491,6 +491,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 50px;
+  text-transform: uppercase;
 }
 .about-me,
 .navbar_logo-link {
@@ -503,6 +504,44 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.benefits-item {
+  background-color: rgb(235, 238, 239);
+  align-content: flex-start;
+  align-items: flex-start;
+  cursor: default;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 16px;
+  height: 216px;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 24px 16px 16px;
+  position: relative;
+  max-width: 350px;
+}
+.benefits-item:hover {
+  background-color: rgba(235, 238, 239, 0.444);
+}
+.benefits-svg {
+  width: 30px;
+}
+.Benefits-heading {
+  font-size: 24px;
+  padding: 20px 0;
+}
+.benefits-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .navlinks-container {
   display: -webkit-box;
@@ -850,7 +889,6 @@ a {
   width: var(--section-width);
   text-align: left;
   font-size: var(--fs-lg);
-  font-weight: 400;
 }
 .project-gallery .project-gallery__wrapper {
   width: var(--section-width);
@@ -972,8 +1010,7 @@ a {
 }
 footer {
   background-color: #1e1e1e;
-  padding-top: 100px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .footer_container {
@@ -1342,7 +1379,7 @@ body {
   height: 100vh;
   background-color: rgb(213, 183, 71);
   filter: brightness(0.75);
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .Awwards-theme-showing-img-wrapper {
@@ -1492,5 +1529,11 @@ img {
     max-width: 370px;
     margin-inline: auto;
     height: 300px;
+  }
+  .Awwards-theme-showing-slide-title {
+    top: 160px;
+  }
+  .Awwards-theme-showing-slider-title-row {
+    flex: 0;
   }
 }
