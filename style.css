@@ -74,7 +74,6 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 body,
 html {
@@ -634,7 +633,7 @@ a {
   flex-direction: column;
 }
 .heading_project_list {
-  height: 70vh;
+  padding-bottom: 100px;
 }
 .marquee_component,
 .web_icon_svg {
@@ -666,7 +665,7 @@ a {
   font-weight: 500;
 }
 .menu-item span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .menu-item-text {
   pointer-events: none;
@@ -715,7 +714,8 @@ a {
   transform: translate3d(0, 0, 0) rotateX(0);
 }
 .section_marquee {
-  background-color: var(--background-primary);
+  background-color: var(--color-blue);
+  color: var(--primary-color);
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
@@ -807,7 +807,7 @@ a {
   max-height: 3.5rem;
 }
 .marquee_divider {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 100vw;
   -webkit-box-flex: 0;
   -ms-flex: none;
@@ -1113,6 +1113,10 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+.skills-heading .menu-item-text h2 {
+  font-size: 2rem;
+  font-family: fonttwo;
+}
 .btn-text .btn-text-inner {
   letter-spacing: 1px;
   font-weight: 100;
@@ -1207,6 +1211,9 @@ footer {
     flex-direction: column-reverse;
     gap: 30px;
   }
+  .heading_project_list {
+    padding-bottom: 50px;
+  }
   .btn-round {
     width: 9rem;
     height: 9rem;
@@ -1252,8 +1259,7 @@ footer {
   .hover_image_effect h1 {
     font-size: 3.5rem;
   }
-  .menu-item h3,
-  span {
+  .menu-item h3 {
     font-size: 1.3rem;
   }
 }

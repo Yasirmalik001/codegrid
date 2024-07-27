@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ),
     o.to(
       ".menu-divider",
-      { duration: 2, width: "100%", ease: "power4.out" },
+      { duration: 0.35, width: "100%", ease: "power4.out" },
       "<"
     ),
     i(),
