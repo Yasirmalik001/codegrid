@@ -44,6 +44,7 @@ img {
 .SKILLS {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .header_projects-list-wrap,
 .menu-footer {
@@ -623,6 +624,7 @@ a {
   justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  gap: 20px;
   align-items: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,7 +634,7 @@ a {
   flex-direction: column;
 }
 .heading_project_list {
-  height: 73vh;
+  height: 70vh;
 }
 .marquee_component,
 .web_icon_svg {
@@ -842,6 +844,7 @@ a {
   row-gap: var(--row-gap);
   position: relative;
   overflow: hidden;
+  padding: 30px 0;
 }
 .section-header {
   width: var(--section-width);
@@ -1262,9 +1265,7 @@ footer {
     gap: 15px;
     flex-wrap: wrap;
   }
-  .container {
-    max-width: 380px;
-  }
+
   .project .project-link .project-title {
     font-size: 1.5rem;
   }

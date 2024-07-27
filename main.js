@@ -251,6 +251,16 @@ document.addEventListener("DOMContentLoaded", function () {
     imgWrapper.appendChild(img);
     slide.appendChild(imgWrapper);
     sliderContainer.appendChild(slide);
+
+    // const imgWrapperMobile = document.createElement("div");
+    // imgWrapperMobile.classList.add("Awwards-theme-showing-img-wrapper-mobile");
+    // const imgMOBILE = document.createElement("img");
+    // img.src = `./assets/img-mobile${i + 1}.webp`;
+    // img.alt = "";
+
+    // imgWrapperMobile.appendChild(imgMOBILE);
+    // slide.appendChild(imgWrapperMobile);
+    // sliderContainer.appendChild(slide);
   }
 
   updateTitle(0, getComputedStyle(bgOverlay).backgroundColor);
