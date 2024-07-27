@@ -73,7 +73,7 @@ img {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   letter-spacing: 1px;
 }
 body,
@@ -1534,7 +1534,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .Awwards-theme-showing-img-wrapper {
-    max-width: 340px;
+    max-width: 330px;
     margin-inline: auto;
     height: 300px;
   }
