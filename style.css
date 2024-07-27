@@ -410,7 +410,7 @@ a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 1.25rem 2.5rem;
+  padding: 1rem 2.5rem;
   border-radius: 4px;
   overflow: hidden;
   color: var(--black);
