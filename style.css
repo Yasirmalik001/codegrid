@@ -1534,7 +1534,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .Awwards-theme-showing-img-wrapper {
-    max-width: 370px;
+    max-width: 340px;
     margin-inline: auto;
     height: 300px;
   }
