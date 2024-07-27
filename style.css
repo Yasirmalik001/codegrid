@@ -27,7 +27,14 @@
   --border-color: rgba(26, 26, 26, 0.27);
   --black: #0b0500;
 }
-
+@font-face {
+  font-family: fontOne;
+  src: url(assets/SuisseIntl-Regular.woff);
+}
+@font-face {
+  font-family: fonttwo;
+  src: url(assets/SuisseIntl-Semibold.woff);
+}
 body,
 html,
 img {
@@ -71,7 +78,7 @@ img {
 body,
 html {
   background-color: var(--primary-color);
-  font-family: "Poppins", sans-serif;
+  font-family: fontOne;
   scroll-behavior: smooth;
 }
 article {
@@ -515,11 +522,11 @@ a {
   letter-spacing: 1px;
   font-display: swap;
 }
-.heading p,
 .hero .heading h1 {
   font-weight: 400;
   color: var(--color);
   font-display: swap;
+  font-family: fonttwo;
 }
 .hero .heading h1 {
   letter-spacing: 8px;
