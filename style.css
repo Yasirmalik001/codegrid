@@ -1216,6 +1216,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .Awwards-theme-showing-slider-title-row {
+    flex: 0;
+  }
   .button_seat {
     margin: 0.2rem 0;
   }
@@ -1485,10 +1488,9 @@ img {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .Awwards-theme-showing {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 @media screen and (max-width: 900px) {
   .Awwards-theme-showing-nav-item-wrapper.active
@@ -1521,10 +1523,7 @@ img {
     height: 300px;
   }
 }
-@media screen and (max-width: 450px) {
-  .letter span {
-    font-size: 50px;
-  }
+@media screen and (max-width: 768px) {
   .Awwards-theme-showing-img-wrapper {
     max-width: 370px;
     margin-inline: auto;
@@ -1535,5 +1534,8 @@ img {
   }
   .Awwards-theme-showing-slider-title-row {
     flex: 0;
+  }
+  .letter span {
+    font-size: 50px;
   }
 }
