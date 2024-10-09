@@ -34,36 +34,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-      <header class="page-width">
-        <div class="navlinks-container">
-          <div class="logo_containers">
-            <h5>logo</h5>
+    <div class="container">
+      <div class="blurry-prev">
+        <img src="./assets/img1.jpg" alt="" />
+        <div class="overlay"></div>
+      </div>
+
+      <div class="col site-info">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Work</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="header">
+          <h1>Welcome to Codegrid</h1>
+        </div>
+        <div class="copy">
+          <p>
+            We are a full-service creative agency delivering innovative design
+            solutions for businesses around the globe.
+          </p>
+        </div>
+      </div>
+
+      <div class="col project-preview">
+        <div class="project-details">
+          <div class="title"><h1>Beyond The Summit</h1></div>
+          <div class="info">
+            <p>
+              Join a team of elite mountaineers as they attempt to conquer K2 in
+              winter, a feat never before accomplished. This breathtaking
+              documentary captures the raw beauty of the Karakoram and the
+              indomitable human spirit.
+            </p>
           </div>
-          <div role="navigation" class="navbar_menu">
-            <a id="about-link" href="#ABOUT" class="menu-item navbar_link"
-              ><div>
-                <span class="menu-item-text">About</span>
-              </div>
-            </a>
-            <a id="works-link" href="#WORK" class="menu-item"
-              ><div>
-                <span class="menu-item-text">Works</span>
-              </div></a
-            >
-            <a id="contact-link" href="#ABOUT" class="menu-item"
-              ><div>
-                <span class="menu-item-text">Contact</span>
-              </div></a
-            >
+          <div class="credits"><p>Credits</p></div>
+          <div class="director"><p>Director: Alex Honnold</p></div>
+          <div class="cinematographer">
+            <p>Cinematographer: Jimmy Chin</p>
           </div>
         </div>
-      </header>
+
+        <div class="project-img">
+          <img src="./assets/img1.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="gallery-wrapper">
+        <div class="gallery"></div>
+      </div>
     </div>
   </body>
-  <script src="
-https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
-"></script>
+  <script src="https://unpkg.com/split-type"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
     defer
