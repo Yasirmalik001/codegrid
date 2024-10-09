@@ -298,13 +298,13 @@ nav {
   height: 100vh;
 }
 
-section.about,
-section.services {
+.about,
+.services {
   padding: 4em;
   background: #87795f;
 }
 
-section.footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,12 +312,12 @@ section.footer {
   color: #87795f;
 }
 
-section.footer h1 {
+.footer h1 {
   font-size: 10vw;
   text-transform: uppercase;
 }
 
-section.marquees {
+.marquees {
   height: 150vh;
   display: flex;
   flex-direction: column;
@@ -351,24 +351,24 @@ section.marquees {
   left: -15%;
 }
 
-.item {
+.container-marquee .item {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.item.with-text {
+.container-marquee .item.with-text {
   flex: 1.5;
 }
 
-.item h1 {
+.container-marquee .item h1 {
   text-transform: uppercase;
   font-size: 140px;
 }
 
 @media (max-width: 900px) {
-  section.marquees {
+  .marquees {
     height: 100vh;
   }
 
@@ -382,11 +382,11 @@ section.marquees {
     left: -35%;
   }
 
-  .item.with-text {
+  .container-marquee .item.with-text {
     flex: 1;
   }
 
-  .item h1 {
+  .container-marquee .item h1 {
     font-size: 60px;
   }
 }
