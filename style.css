@@ -71,7 +71,10 @@ html {
   -webkit-transform: translate3d(0, 0, 0) rotateX(0);
   transform: translate3d(0, 0, 0) rotateX(0);
 }
-
+html {
+  width: 100vw;
+  height: 100vh;
+}
 .container-portfolio {
   width: 100vw;
   height: 100vh;
