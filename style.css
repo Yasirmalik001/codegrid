@@ -6,11 +6,18 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+html {
+  font-size: 67.5%;
+}
+.page-width {
+  padding: 0 3rem;
+}
 .menu-item {
   position: relative;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
 }
+
 .menu-item span {
   font-size: 1rem;
 }
