@@ -79,19 +79,18 @@ body {
   background-color: #0f0f0f;
 }
 
-img {
+.container-portfolio img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-h1 {
+.container-portfolio h1 {
   color: #fff;
   font-size: 36px;
   font-weight: 500;
 }
-
-a,
+.container-portfolio a,
 p {
   text-decoration: none;
   color: #fff;
