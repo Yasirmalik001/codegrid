@@ -8,7 +8,8 @@
   src: url("./fonts/BigShouldersDisplay.ttf") format("woff2-variations");
 }
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Big Shoulders Display";
 }
 html {
   font-size: 67.5%;
@@ -76,7 +77,6 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "PP Neue Montreal";
   background-color: #0f0f0f;
 }
 
