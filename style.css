@@ -72,8 +72,7 @@ html {
   transform: translate3d(0, 0, 0) rotateX(0);
 }
 
-html,
-body {
+.container-portfolio {
   width: 100vw;
   height: 100vh;
   background-color: #0f0f0f;
@@ -282,7 +281,9 @@ p {
   }
 }
 /* ***************marquee-container********************** */
-
+.container-marquee {
+  overflow-x: hidden;
+}
 .container-marquee p {
   font-size: 42px;
   font-weight: 500;
@@ -386,26 +387,4 @@ p {
   .container-marquee .item h1 {
     font-size: 60px;
   }
-}
-
-/* lenis scroll */
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
 }
