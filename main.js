@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const itemsContainer = document.querySelector(".items");
   const itemsCols = document.querySelectorAll(".items-col");
   const filters = document.querySelectorAll(".filter");
-  let defaultFontSize = "75px";
-  let activeFontSize = "250px";
+  let defaultFontSize = "45px";
+  let activeFontSize = "150px";
 
   function splitTextIntoSpans(selector) {
     const elements = document.querySelectorAll(selector);
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   splitTextIntoSpans(".filter h1");
-  animateFontSize(document.querySelector(".filter.active h1"), "300px");
+  animateFontSize(document.querySelector(".filter.active h1"), "150px");
   addItemsToCols();
 
   filters.forEach((filter) => {

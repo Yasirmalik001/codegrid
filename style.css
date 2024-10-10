@@ -711,14 +711,10 @@ nav {
 .filter {
   width: max-content;
   height: max-content;
-  padding: 1.5em 0 0.5em 0;
+  padding: 10px;
   display: flex;
   align-items: flex-end;
   cursor: pointer;
-}
-
-.filter.active {
-  padding-top: 2.5em;
 }
 
 .filter p {
@@ -730,7 +726,7 @@ nav {
 }
 
 .filter.active p {
-  bottom: 24px;
+  bottom: 10px;
 }
 
 .filter h1 span {
@@ -752,14 +748,14 @@ nav {
   left: 0;
   width: 60%;
   height: 100%;
-  padding: 2em;
+  padding: 4px;
   display: flex;
 }
 
 .items-col {
   flex: 1;
   height: max-content;
-  padding: 2em 1em;
+  padding: 10px;
 }
 
 .items-col:nth-child(2) {
@@ -780,16 +776,19 @@ nav {
 
 @media (max-width: 900px) {
   .items {
-    width: 100%;
+    width: 70%;
   }
 
   .filters {
-    z-index: -2;
+    z-index: -1;
   }
-
+  .items-col {
+    flex: 1;
+    height: max-content;
+    padding: 4px;
+  }
   .filter {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
   }
 }
