@@ -1,24 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
-  let e = document.querySelectorAll(".menu-item");
-  e.forEach((e) => {
-    let t = e.children[0].innerText.trim().split(/\s+/),
-      n = "";
-    t.forEach((e) => {
-      let t = "";
-      e.split("").forEach((e, n) => {
-        t += `<span style="--index: ${n};">${e}</span>`;
-      }),
-        (n += `${t}&nbsp;`);
-    }),
-      (e.children[0].innerHTML = n);
-    let r = e.children[0].cloneNode(!0);
-    (r.style.position = "absolute"),
-      (r.style.left = "0"),
-      (r.style.top = "0"),
-      e.appendChild(r);
-  });
+let elements = document.querySelectorAll(".text");
+
+elements.forEach((element) => {
+  let innerText = element.innerText;
+  element.innerHTML = "";
+
+  let textContainer = document.createElement("div");
+  textContainer.classList.add("block");
+
+  for (let letter of innerText) {
+    let span = document.createElement("span");
+    span.innerText = letter.trim() === "" ? "\xa0" : letter;
+    span.classList.add("letter");
+    textContainer.appendChild(span);
+  }
+
+  element.appendChild(textContainer);
+  element.appendChild(textContainer.cloneNode(true));
 });
 
+elements.forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    element.classList.remove("play");
+  });
+});
 import { galleryItems } from "./data.js";
 
 document.addEventListener("DOMContentLoaded", function () {

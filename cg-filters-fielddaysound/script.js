@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const itemsContainer = document.querySelector(".items");
+  const itemsContainer = document.querySelector(".items-filter");
   const itemsCols = document.querySelectorAll(".items-col");
   const filters = document.querySelectorAll(".filter");
   let defaultFontSize = "75px";
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     filteredItems.forEach((item) => {
       const itemElement = document.createElement("div");
-      itemElement.className = "item-filter-element";
+      itemElement.className = "item";
       itemElement.innerHTML = `
          <div class="item-img">
             <img src="${item.img}" alt="">
