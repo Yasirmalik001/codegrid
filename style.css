@@ -931,7 +931,7 @@ a {
 }
 
 .cards__item {
-  color: #fff;
+  color: var(--black);
   border-color: var(--black);
 }
 .cards__item {
@@ -941,7 +941,7 @@ a {
 }
 
 .cards__item {
-  border: 1px solid #fff;
+  border: 1px solid var(--black);
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -997,10 +997,6 @@ a {
 }
 
 .cards__item {
-  color: var(--black);
-  border-color: var(--black);
-}
-.cards__item {
   transition: background-color var(--ease-out), color var(--ease-out),
     width var(--ease-out), transform var(--ease-out),
     border-color var(--ease-out);
@@ -1010,6 +1006,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  background-color: var(--light-blue);
 }
 @media screen and (max-width: 1024px) {
   .About-procedure {
@@ -1039,11 +1036,15 @@ a {
     grid-row-gap: 2.08rem;
     flex-direction: column;
     align-items: center;
-    width: 25.72rem;
-    /* margin-right: clamp(40px, 6.94444vw, 180px); */
-    margin-left: 13px;
+    width: 20.72rem;
     padding-top: 5.59rem;
     padding-bottom: 22.09rem;
     display: flex;
+    margin: 0 auto;
+  }
+  .cards__item.active {
+    background-color: var(--black);
+    color: var(--light-blue);
+    width: 120%;
   }
 }
